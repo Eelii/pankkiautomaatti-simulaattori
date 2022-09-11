@@ -1,0 +1,88 @@
+body{
+  overflow: hidden;
+}
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 100vh;
+}
+.keypad{
+  width: 200px;
+  height: 250px;
+  display: grid;
+  border: solid gray 5px;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  margin-left: 100px;
+  box-shadow: -2px 2px 10px 2px black;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.keypad-unlocked{
+  width: 200px;
+  height: 250px;
+  border: solid gray 5px;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  margin-left: 100px;
+  box-shadow: -2px 2px 10px 2px black;
+  color: limegreen;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.padButton{
+  border: solid gray 1px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.padButton-lock{
+  border: solid gray 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.padButton:hover{
+  background-color: #f2f2f2;
+}
+.bankInterface{
+  width: 300px;
+  height: 300px;
+  border: solid blue 2px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.bankInterface-header{
+  height: 20%;
+  background-color: aliceblue ;
+  text-align: center;
+  font-size: 1.5em;
+  border-bottom: grey solid 1px;
+}
+.bankInterface-body{
+  height: 80%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.bankInterface-accountView{
+  width: 100%;
+}
+.bankInterface-pinInputField{
+  width: 60%;
+  height: 20%;
+  border: solid black 1px;
+  border-radius: 10px;
+  font-size: 30px;
+}
